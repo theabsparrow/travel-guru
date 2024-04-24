@@ -1,8 +1,12 @@
+import Navbar2 from "../components/navbar2/Navbar2"
 
 
 const SignUp = () => {
     return (
-        <div>
+        <div className="h-screen">
+            <div>
+            <Navbar2></Navbar2>
+            </div>
             this is sign up
         </div>
     );

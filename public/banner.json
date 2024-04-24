@@ -1,0 +1,29 @@
+
+    [
+      {
+        "id": 1,
+        "title": "Cox's Bazar",
+        "description": "Cox's Bazar is a town on the southeast coast of Bangladesh. It's known for its very long, sandy beachfront, stretching from Sea Beach in the north to Kolatoli Beach in the south. The beach is backed by a busy main road, lined with shops, hotels, and restaurants.",
+        "photo": "https://ibb.co/C7gbrss"
+      },
+      {
+        "id": 2,
+        "title": "Sundarbans",
+        "description": "The Sundarbans is a vast forest in the coastal region of the Bay of Bengal and considered one of the natural wonders of the world. It's famous for its dense mangrove forests, Royal Bengal tigers, and diverse wildlife.",
+        "photo": "https://ibb.co/zNbvNX2"
+      },
+      {
+        "id": 3,
+        "title": "Sreemangal",
+        "description": "Sreemangal is a town in northeastern Bangladesh, known for its tea gardens. It's often called the 'Tea Capital of Bangladesh'. The area is dotted with lush tea gardens, hills, and forests.",
+        "photo": "https://ibb.co/XV3b7mY"
+      },
+      {
+        "id": 4,
+        "title": "Sajek",
+        "description": "Sajek Valley is an emerging tourist spot in Bangladesh situated among the hills of the Kasalong range of mountains in Sajek union, Baghaichhari upazila in Rangamati District. It's famous for its natural beauty, serene environment, and indigenous communities.",
+        "photo": "https://ibb.co/vVrqpB0"
+      }
+    ]
+
+  

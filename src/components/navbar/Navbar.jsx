@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import logo from "../../../public/images/logo.png"
 import { IoIosSearch } from "react-icons/io";
 import { useState } from "react";
@@ -18,7 +18,9 @@ const Navbar = () => {
             </div>
 
             <div>
-                <img className="image-filter w-[20vw] md:w-[25vw] lg:w-[8vw]" src={logo} alt="logo" />
+                <Link to='/'>
+                    <img className="image-filter w-[20vw] md:w-[25vw] lg:w-[8vw]" src={logo} alt="logo" />
+                </Link>
             </div>
 
             <div>
