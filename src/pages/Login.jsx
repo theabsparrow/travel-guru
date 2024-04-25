@@ -2,8 +2,27 @@ import { Link } from "react-router-dom";
 import Navbar2 from "../components/navbar2/Navbar2"
 import { FaFacebook } from "react-icons/fa";
 import { FcGoogle } from "react-icons/fc";
+import { useContext, useState } from "react";
+import { authContex } from "../components/authProvider/AuthProvider";
 
 const Login = () => {
+    const { loginUser, setUser } = useContext(authContex);
+    const [error, setError] = useState(null);
+
+    const handleLogin = (e) => {
+        e.preventDefault()
+        const email = e.target.email.value;
+        const password = e.target.password.value;
+
+        loginUser(email, password)
+            .then((result) => {
+                setUser(result.user)
+            })
+            .catch((error) => {
+                setError(error.message)
+            })
+
+    }
     return (
         <div className="h-screen">
             <div>
@@ -12,7 +31,7 @@ const Login = () => {
             <div className="px-2 md:px-6 lg:px-[80px] mt-24 lg:mt-16 flex justify-center">
                 <div className="w-[90vw] lg:w-[30vw] ">
                     {/* form starts */}
-                    <form className="card-body border-[1px] border-[#ABABAB] px-13 rounded-xl">
+                    <form onSubmit={handleLogin} className="card-body border-[1px] border-[#ABABAB] px-13 rounded-xl">
                         <h1 className="text-2xl font-bold mb-8" >Login</h1>
                         <div className="form-control">
                             <input name="email" type="email" placeholder="username or email" className="text-black font-medium border-b-[2px] pb-2 outline-none" required />
